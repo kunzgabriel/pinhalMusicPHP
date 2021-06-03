@@ -29,9 +29,9 @@
 								<table class="table table-bordered data-table">
 									<thead>
 										<tr>
-											<th>ID</th>
-											<th>Nome</th>
-											<th>Login</th>
+											<th style="width: 20%;">ID</th>
+											<th style="width: 35%;">Nome</th>
+											<th style="width: 35%;">Login</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -49,7 +49,6 @@
 												<td><?php echo $id ?></td>
 												<td><?php echo $nome ?></td>
 												<td><?php echo $login ?></td>
-											
 												<td>
 													<a class="btn btn-small btn-primary" href="edt_usuario.php?id=<?php echo $id ?>"/><i class='icon-edit icon-white'></i> Editar</a>
 													<a class="btn btn-small btn-danger" href="exc_usuario.php?id_exc=<?php echo $id ?>" onclick='return confirm("Deseja Remover o registro selecionado?");'><i class='icon-remove-circle icon-white'></i> Excluir</a>
