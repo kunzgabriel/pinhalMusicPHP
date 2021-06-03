@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+#wrap {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    background: #eeeeee;
+    overflow: hidden;
+}
+
+#corpo {
+    margin: 0 auto 0;
+    width: 960px;
+    height: auto;
+}
+
+#base_login {
+    margin: 0 auto 0;
+    width: 458px;
+    height: 409px;
+    margin-top: 10%;
+    background: url("../img/faca_login.png")no-repeat center top
+}
+
+#usuario {
+    float: left;
+    width: 331px;
+    height: 38px;
+    border: 0px;
+    margin: 183px 0 0 85px
+}
+
+#senha {
+    float: left;
+    width: 331px;
+    height: 38px;
+    border: 0px;
+    margin: 22px 0 0 85px
+}
+
+#input_login_button {
+    float: left;
+    width: 383px;
+    height: 44px;
+    border: 0;
+    margin-top: 38px;
+    text-indent: -99999em;
+    overflow: hidden;
+    background: url("../img/entrar.png") no-repeat 0px 0px;
+    margin-left: 39px;
+    cursor: pointer;
+    display: block;
+}
+
+#input_login_button:hover {
+    float: left;
+    width: 382px;
+    height: 43px;
+    background-color: red;
+    opacity: 0.1
+}
+
+.redefinir_senha {
+    float: right;
+    width: 137px;
+    height: 17px;
+    display: block;
+    cursor: pointer;
+    margin-right: 35px;
+    margin-top: 13px;
+    text-indent: -99999em;
+    overflow: hidden;
+}
+
+#base_senha {
+    margin: 0 auto 0;
+    width: 458px;
+    height: 409px;
+    margin-top: 20%;
+    background: url("../img/equeceu_senha.png")no-repeat center top
+}
+
+#input_email {
+    float: left;
+    width: 331px;
+    height: 38px;
+    border: 0px;
+    margin: 183px 0 0 85px
+}
+
+#input_login_senha {
+    float: left;
+    width: 383px;
+    height: 44px;
+    border: 0;
+    margin-top: 18px;
+    text-indent: -99999em;
+    overflow: hidden;
+    background: url("../img/entrar.png") no-repeat 0px 0px;
+    margin-left: 39px;
+    cursor: pointer;
+    display: block;
+}
+
+#input_login_senha:hover {
+    float: left;
+    width: 382px;
+    height: 44px;
+    background-color: red;
+    opacity: 0.1
+}
+
+.voltar_senha {
+    float: right;
+    width: 102px;
+    height: 44px;
+    display: block;
+    cursor: pointer;
+    margin-right: 36px;
+    margin-top: 36px;
+    text-indent: -99999em;
+    overflow: hidden;
+}
+
+.voltar_senha:hover {
+    float: right;
+    width: 102px;
+    height: 44px;
+    background-color: red;
+    opacity: 0.1
+}

@@ -1,0 +1,1 @@
+<div class="alert alert-info" role="alert">Arraste os elementos abaixo, reposicionando-os na ordem em que deseja que sejam exibidos no site, é só clicar e arrastar cada um, trocando-os de posição <b>(OBS. As alterações são salvas automaticamente ao mover os elementos)</b>.</div>
