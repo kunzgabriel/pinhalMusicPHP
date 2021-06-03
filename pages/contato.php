@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <img src="../img/logo.png" height="24px" width="24px">
-                <a class="navbar-brand" href="#">PinhalMusic</a>
+                <a class="navbar-brand" style="font-weight: bold;" href="#">&nbsp;PinhalMusic</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
