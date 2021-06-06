@@ -64,31 +64,6 @@
     ?>
     <!--Esta função é chamada no nosso botão para abrir uma caixa de dialogo mais bonitinha para receber a msg   -->
 
-    <script type="text/javascript">
-        function CadastrarAjax(el) {
-            var $this = $('#frm_cad');
-
-            login = $this.find("input[name='inp_login']").val();
-            senha = $this.find("input[name='inp_senha']").val();
-
-            $.ajax({
-                type: 'POST',
-                dataType: 'html',
-                url: 'insere_usuario_dados.php',
-
-                data: {
-                    inp_login: login,
-                    inp_senha: senha
-                },
-                success: function(msg) {
-                    $('#meuJS').append(msg);
-                }
-
-            })
-        }
-    </script>
-
-
     <script>
         function alert_msg() {
             $('#alert_modal').modal('show');

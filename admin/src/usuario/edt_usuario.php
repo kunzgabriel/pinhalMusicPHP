@@ -36,11 +36,10 @@
                 <div class="span12">
                     <form id="frm_edt" name="frm_edt" method="post" class="form-horizontal" action="update_usuario.php" enctype="multipart/form-data">
                         <input style="display: none" hidden value=<?php echo " '$id' " ?> name="id" />
-
                         <div class="control-group">
                             <label class="control-label" for="inp_nome">Nome*:</label>
                             <div class="controls">
-                                <input type="text" name="inp_nome" id="inp_nome" class="input-xlarge" placeholder="Informe..." <?php echo " value='$nome'" ?>>
+                                <input required type="text" name="inp_nome" id="inp_nome" class="input-xlarge" placeholder="Informe..." <?php echo " value='$nome'" ?>>
                             </div>
                         </div>
                         <div class="control-group">
@@ -52,13 +51,13 @@
                         <div class="control-group">
                             <label class="control-label" for="inp_senha">Senha Antiga*:</label>
                             <div class="controls">
-                                <input type="password" name="inp_senhaAntiga" class="input-xlarge" placeholder="Informe...">
+                                <input required type="password" name="inp_senhaAntiga" class="input-xlarge" placeholder="Informe...">
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="inp_senha">Nova Senha*:</label>
                             <div class="controls">
-                                <input type="password" name="inp_senhaNova" class="input-xlarge" placeholder="Informe...">
+                                <input required type="password" name="inp_senhaNova" class="input-xlarge" placeholder="Informe...">
                             </div>
                         </div>
 
@@ -69,8 +68,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                         <?php
                         include "../../inc/inc_submit.php";
                         ?>

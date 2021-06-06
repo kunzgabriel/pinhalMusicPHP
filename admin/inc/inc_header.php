@@ -25,5 +25,12 @@ require "../../conecta.php";
                 <li><a href="../usuario/list_usu.php">Listar</a></li>
             </ul>
         </li>
+        <li class="submenu">
+            <a href="#"><i class="icon icon-th-list"></i><span>Produtos</span></a>
+            <ul>
+                <li class="active"><a href="../produtos/form_adicionar_produtos.php">Cadastrar</a></li>
+                <li><a href="../produtos/listar_produtos.php">Listar</a></li>
+            </ul>
+        </li>
     </ul>
 </div>
