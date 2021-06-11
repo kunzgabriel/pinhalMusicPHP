@@ -31,7 +31,6 @@ if ($row = mysqli_fetch_array($query)) {
     exit;
 }
 
-
 if (!in_array($extensaoImagemExterna, $allowedExtensions)) {
     get_error_msg('Formato da Imagem Externa é inválido!
     Os formatos permitidos são: PNG, JPEG, JPG e GIF.');

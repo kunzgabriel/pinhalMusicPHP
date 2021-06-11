@@ -58,149 +58,40 @@
         </nav>
     </header>
 
-    <div class="card-group container pt-3">
-        <div class="card">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/violao-classico-tras.jpg" class="card-img-top py-3">
+    <?php
+        include '../../admin/conecta.php';
+        $sql = "select * from produtos";
+        $query = mysqli_query($con, $sql);
+        while ($p = mysqli_fetch_array($query)) {
+            $cards[] = "
+            <div class='card'>
+                <div class='carousel-inner'>
+                    <div class='carousel-item active'>
+                        <img src='../../admin/src/produtos/{$p['proImagemInterna']}' class='card-img-top py-3'>
+                    </div>
+                    <div class='carousel-item active frente'>
+                        <img src='../../admin/src/produtos/{$p['proImagemExterna']}' class='card-img-top py-3'>
+                    </div>
                 </div>
-                <div class="carousel-item active frente">
-                    <img src="./img/violao-classico.jpg" class="card-img-top py-3">
-                </div>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Violão Clássico Harmonics Estudo GS11 Acústico Cordas de Aço</h5>
-                <p class="card-text" style="text-align: justify; font-size: 13px;">Cód.: E1010023794</p>
-                <a href="#" class="btn btn-primary">De <s>R$570,00</s><br>Por R$479,61</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/violao-folk-tras.jpg" class="card-img-top py-3">
-                </div>
-                <div class="carousel-item active frente">
-                    <img src="./img/violao-folk.jpg" class="card-img-top py-3">
+                <div class='card-body'>
+                    <h5 class='card-title'>{$p['proCodigo']} - {$p['proDescricao']}</h5>
+                    <p class='card-text' style='text-align: justify; font-size: 13px;'>Peso Bruto: {$p['proPesoBruto']} KG</p>
+                    <a href='#' class='btn btn-primary'>Ver detalhes...</a>
                 </div>
             </div>
-            <div class="card-body">
-                <h5 class="card-title">Violão Folk Fender CD-140 SCE Elétrico Cordas de Aço</h5>
-                <p class="card-text" style="text-align: justify; font-size: 13px;">Cód.: E1000126899</p>
-                <a href="#" class="btn btn-primary">De <s>R$4.443,90</s><br>Por R$3.999,51</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/guitarra-jack-tras.jpg" class="card-img-top py-3">
-                </div>
-                <div class="carousel-item active frente">
-                    <img src="./img/guitarra-jack-frente.jpg" class="card-img-top py-3">
-                </div>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Guitarra Jackson Monarkh JS22 598 Tobacco Burst</h5>
-                <p class="card-text">Cód.: E1000074179</p>
-                <a href="#" class="btn btn-primary">De <s>R$3.221,90</s><br>Por R$2.899,71</a>
-            </div>
-        </div>
-    </div>
-    <!-- SANFONAS -->
-    <div class="card-group container pt-3">
-        <div class="card">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/acordeon_2_1.jpg" class="card-img-top py-3">
-                </div>
-                <div class="carousel-item active frente">
-                    <img src="./img/acordeon_2_2.jpg" class="card-img-top py-3">
-                </div>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Acordeon Michael 48 Baixos ACM4803N</h5>
-                <p class="card-text" style="text-align: justify; font-size: 13px;">Cód.: E1010023661</p>
-                <a href="#" class="btn btn-primary">De <s>R$4.321,90</s><br>Por R$3.889,71</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/acordeon_3_1.jpg" class="card-img-top py-3">
-                </div>
-                <div class="carousel-item active frente">
-                    <img src="./img/acordeon_3_2.jpg" class="card-img-top py-3">
-                </div>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Acordeon Michael ACM12013-6N 120 Baixos com Case Luxo e Alça</h5>
-                <p class="card-text" style="text-align: justify; font-size: 13px;">Cód.: E1010032369</p>
-                <a href="#" class="btn btn-primary">De <s>R$9.949,90</s><br>Por R$8.839,71</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/acordeon_1_1.jpg" class="card-img-top py-3">
-                </div>
-                <div class="carousel-item active frente">
-                    <img src="./img/acordeon_1_2.jpg" class="card-img-top py-3">
-                </div>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Acordeon Michael 80 Baixos ACM8007N Case Super Luxo e Alças</h5>
-                <p class="card-text">Cód.: E1010023662</p>
-                <a href="#" class="btn btn-primary">De <s>R$6.154,90</s><br>Por R$5.539,41</a>
-            </div>
-        </div>
-    </div>
-    <!-- PERCUSSAO -->
-    <div class="card-group container py-3">
-        <div class="card">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/cajon-tras.jpg" class="card-img-top py-3">
-                </div>
-                <div class="carousel-item active frente">
-                    <img src="./img/cajon-frente.jpg" class="card-img-top py-3">
-                </div>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Cajon Elétrico FSA Gospel FG1511 - Águas Tranquilas</h5>
-                <p class="card-text" style="text-align: justify; font-size: 13px;">Cód.: E1000084409</p>
-                <a href="#" class="btn btn-primary">De <s>R$579,90</s><br>Por R$521,91</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/cajon2-tras.jpg" class="card-img-top py-3">
-                </div>
-                <div class="carousel-item active frente">
-                    <img src="./img/cajon2-frente.jpg" class="card-img-top py-3">
-                </div>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Cajon Elétrico FSA Strike com Captação - 3D SK5062 Premium</h5>
-                <p class="card-text" style="text-align: justify; font-size: 13px;">Cód.: E1000110951</p>
-                <a href="#" class="btn btn-primary">De <s>R$451,90</s><br>Por R$406,71</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/cajon3-tras.jpg" class="card-img-top py-3">
-                </div>
-                <div class="carousel-item active frente">
-                    <img src="./img/cajon3-frente.jpg" class="card-img-top py-3">
-                </div>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Cajon Elétrico FSA Design FC6641 - Berrante Aqui tem Coragi</h5>
-                <p class="card-text">Cód.: E1000084417</p>
-                <a href="#" class="btn btn-primary">De <s>R$805,50</s><br>Por R$725,31</a>
-            </div>
-        </div>
-    </div>
+            ";
+        } 
+        $cont = 0;
+        $html = '';
+        for ($i = 0; $i < count($cards); $i++) {
+            $cont = $cont === 3 ? 0 : $cont;
+            $cont == 0 && $html .= "<div class='card-group container pt-3'>"; 
+            $html .= $cards[$i];
+            $cont++;
+            $cont == 3 && $html .= "</div>";
+        }
+        echo $html;
+    ?>
 
     <footer class="footer bg-dark py-3" style="text-align: center; position: relative; bottom: 0; width: 100%;">
         <div class="container-fluid text-muted">

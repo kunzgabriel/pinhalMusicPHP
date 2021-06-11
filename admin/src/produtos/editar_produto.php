@@ -46,6 +46,9 @@
                             <div class="controls">
                                 <input disabled type="text" pattern="\d*" name="proCodigo" id="proCodigo" class="input-xlarge" placeholder="Informe..." value="<?php echo $proCodigo ?>">
                             </div>
+                            <div class="controls" style="display: none;">
+                                <input type="text" pattern="\d*" name="proCodigo" id="proCodigo" class="input-xlarge" placeholder="Informe..." value="<?php echo $proCodigo ?>">
+                            </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="proDescricao">Descrição*:</label>
@@ -87,10 +90,13 @@
                             <label class="control-label" for="proImagemExterna">Imagem Externa*:</label>
                             <div class="controls">
                                 <input type="file" name="proImagemExterna" id="proImagemExterna" class="input-xlarge">
+                                <label for="removerImagemExterna" title="A remoção só ocorrerá no caso de não selecionar uma nova imagem">
+                                    <input type="checkbox" name="removerImagemExterna" id="removerImagemExterna"> Remover imagem externa
+                                </label>
                                 <table border="1" width="200px" height="200px">
                                     <tr>
                                         <td colspan="1">
-                                            <img src="<?php echo $proImagemExterna?>" alt="<?php echo $proImagemExterna?>" width="100%">
+                                            <img src="<?php echo $proImagemExterna?>" alt="<?php echo ($proImagemExterna ?: 'Sem imagem cadastrada') ?>" width="100%">
                                         </td>
                                     </tr>
                                 </table>
@@ -100,10 +106,13 @@
                             <label class="control-label" for="proImagemInterna">Imagem Interna*:</label>
                             <div class="controls">
                                 <input type="file" name="proImagemInterna" id="proImagemInterna" class="input-xlarge">
+                                <label for="removerImagemInterna" title="A remoção só ocorrerá no caso de não selecionar uma nova imagem">
+                                    <input type="checkbox" name="removerImagemInterna" id="removerImagemInterna"> Remover imagem interna
+                                </label>
                                 <table border="1" width="200px" height="200px">
                                     <tr>
                                         <td colspan="1">
-                                            <img src="<?php echo $proImagemInterna?>" alt="<?php echo $proImagemInterna?>" width="100%">
+                                            <img src="<?php echo $proImagemInterna?>" alt="<?php echo ($proImagemInterna ?: 'Sem imagem cadastrada')?>" width="100%">
                                         </td>
                                     </tr>
                                 </table>

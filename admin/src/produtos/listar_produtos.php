@@ -57,7 +57,7 @@
                                                 <td><?php echo $proLargura?></td>
 												<td>
 													<a class="btn btn-small btn-primary" href="editar_produto.php?proCodigo=<?php echo $proCodigo ?>"/><i class='icon-edit icon-white'></i> Editar</a>
-													<a class="btn btn-small btn-danger" href="exc_produto.php?proCodigo=<?php echo $proCodigo ?>" onclick='return confirm("Deseja Remover o registro selecionado?");'><i class='icon-remove-circle icon-white'></i> Excluir</a>
+													<a class="btn btn-small btn-danger" href="excluir_produto.php?proCodigo=<?php echo $proCodigo ?>" onclick='return confirm("Deseja Remover o registro selecionado?");'><i class='icon-remove-circle icon-white'></i> Excluir</a>
 												</td>
 											</tr>
 											<?php
