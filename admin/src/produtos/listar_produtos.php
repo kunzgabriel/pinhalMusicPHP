@@ -30,10 +30,8 @@
 									<thead>
 										<tr>
 											<th style="width: 10%;">Codigo</th>
-											<th style="width: 30%;">Descricao</th>
-                                            <th style="width: 15%;">Comprimento</th>
-                                            <th style="width: 15%;">Altura</th>
-                                            <th style="width: 15%;">Largura</th>
+											<th style="width: 60%;">Descricao</th>
+                                            <th style="width: 15%;">Imagem Externa</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -44,20 +42,16 @@
 										while ($listagem = mysqli_fetch_array($sql)) {
 											$proCodigo = $listagem['proCodigo'];
 											$proDescricao = $listagem['proDescricao'];
-                                            $proComprimento = $listagem['proComprimento'];
-                                            $proAltura = $listagem['proAltura'];
-                                            $proLargura = $listagem['proLargura'];
+											$proImagemExterna = $listagem['proImagemExterna']
 											
 											?>
 											<tr class="grade_">
-												<td><?php echo $proCodigo ?></td>
-												<td><?php echo $proDescricao ?></td>
-                                                <td><?php echo $proComprimento ?></td>
-                                                <td><?php echo $proAltura ?></td>
-                                                <td><?php echo $proLargura?></td>
+												<td style="font-size: 32px;text-align: center; vertical-align: middle;"><?php echo $proCodigo ?></td>
+												<td style="font-size: 32px;text-align: center; vertical-align: middle;"><?php echo $proDescricao ?></td>
+												<td style="font-size: 32px;text-align: center; vertical-align: middle;"><img src="<?php echo $proImagemExterna ?>" alt="Imagem Externa" height="200px" width="200px"></td>
 												<td>
-													<a class="btn btn-small btn-primary" href="editar_produto.php?proCodigo=<?php echo $proCodigo ?>"/><i class='icon-edit icon-white'></i> Editar</a>
-													<a class="btn btn-small btn-danger" href="excluir_produto.php?proCodigo=<?php echo $proCodigo ?>" onclick='return confirm("Deseja Remover o registro selecionado?");'><i class='icon-remove-circle icon-white'></i> Excluir</a>
+													<a class="btn btn-big btn-primary" href="editar_produto.php?proCodigo=<?php echo $proCodigo ?>"/><i class='icon-edit icon-white'></i> Editar</a>
+													<a class="btn btn-big btn-danger" href="excluir_produto.php?proCodigo=<?php echo $proCodigo ?>" onclick='return confirm("Deseja Remover o registro selecionado?");'><i class='icon-remove-circle icon-white'></i> Excluir</a>
 												</td>
 											</tr>
 											<?php
